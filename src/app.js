@@ -8,6 +8,7 @@ const getWeatherDetails = require('./utils/getWeatherDetails');
 // console.log(path.join(__dirname, '../public'));
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -22,7 +23,6 @@ hbs.registerPartials(partialsPath);
 //set up static directory to serve
 app.use(express.static(publicDirectoryPath));
 
-const port = 3000;
 
 app.get('',(req, res)=>{
     res.render('index',{

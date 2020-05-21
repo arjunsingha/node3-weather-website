@@ -1,6 +1,7 @@
 console.log('Client side js!!');
 
-const urlBasePath ='http://localhost:3000/weather?address=';
+//const urlBasePath ='http://localhost:3000/weather?address=';
+const urlBasePath ='/weather?address=';
 
 const getWeatherDetails = ()=>{
     var location = document.querySelector('#txtCity').value;
